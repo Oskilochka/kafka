@@ -1,6 +1,8 @@
 # Apache Kafka with Spring boot
 
 ### Apache Kafka Quickstart
+*[Kafka Docs](https://kafka.apache.org/quickstart)*
+
 1. Get Kafka - [Download](https://www.apache.org/dyn/closer.cgi?path=/kafka/3.6.0/kafka_2.13-3.6.0.tgz)
 2. Start the kafka enviroment:
    - Start the ZooKeeper service - `bin/zookeeper-server-start.sh config/zookeeper.properties`
@@ -8,7 +10,6 @@
    - Create a topic  `bin/kafka-topics.sh --create --topic topic-name --bootstrap-server localhost:9092`
    - Read the events `bin/kafka-console-consumer.sh --topic topic-name --from-beginning --bootstrap-server localhost:9092`
    - Write event into topic `bin/kafka-console-producer.sh --topic topic-name --bootstrap-server localhost:9092`
-*[Kafka Docs](https://kafka.apache.org/quickstart)*
 
 #### Kafka-wikimedia
 * Spring Boot Reactive with Kafka for real-time data processing 
